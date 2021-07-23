@@ -55,7 +55,7 @@ export class S3HostingStack extends cdk.Stack {
           aliases: [domainName],
           props: {
             acmCertificateArn: acmCertificateArn,
-            sslSupportMethod: cf.SSLMethod.VIP,
+            sslSupportMethod: cf.SSLMethod.SNI,
           },
         },
         errorConfigurations: [
