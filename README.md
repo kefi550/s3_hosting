@@ -4,7 +4,7 @@
 
 ```sh
 npm install
-npx cdk diff --context env=<ドメイン名>
-npx cdk deploy --context env=<ドメイン名>
+npm run cdk diff -- --context env=<ドメイン名>
+npm run cdk deploy -- --context env=<ドメイン名>
 ```
 
